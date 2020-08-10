@@ -1,0 +1,105 @@
+.error{
+    background-color: $errorBg;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom:2rem; 
+}
+.p-0{padding:0 !important;}
+.mr-0{margin-right:0 !important;}
+.row{
+    margin-bottom: 0;
+}
+.select-wrapper + label{
+    font-size: $bodyFontSize;
+    color: $colorBody;
+    font-weight: 600;
+    top: -4.5rem;
+
+    @media only screen and (min-width:37.5em){
+        top: -3.8rem;
+    }
+}
+.dropdown-content li > a, .dropdown-content li > span{
+    font-size: $bodyFontSize;
+    color: $colorBody;
+}
+.input-field{
+    width: 100%;
+    margin: 2.5rem 0;
+
+    @media only screen and (min-width:37.5em){
+        margin: 1rem 0;
+    }
+}
+
+.input-container{
+    display: block;
+    margin-bottom: 2.5rem;
+
+    @media only screen and (min-width:37.5em){
+        display: flex;
+        margin-bottom: 1rem;
+        align-items: center;
+    }
+    .d-flex{
+        display: flex;
+        justify-content: space-between;;
+    }
+
+    & label{
+        padding-left: .75rem;
+        padding-right: 0rem;
+        font-size: $bodyFontSize;
+        color: $colorBody;
+        font-weight: 600;
+
+        @media only screen and (min-width:37.5em){
+            padding-right: 2rem;
+        }
+        
+    }
+
+    & [type="radio"] + span:before, [type="radio"] + span:after{
+        width: 16px;
+        height: 16px;
+        margin: 0.5rem;
+        left: 7px;
+    }
+
+    & [type="radio"]:not(:checked) + span, [type="radio"]:checked + span{
+        font-size: $bodyFontSize;
+        font-weight: 400;
+        margin-right: 7.5rem;
+    }
+
+    & [type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:after{
+        background-color: $colorSecondary;
+    }
+
+    & [type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:before, [type="radio"].with-gap:checked + span:after{
+        border: 2px solid $colorSecondary;
+    }
+}
+.btn-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 4rem;
+    
+    & button{
+        background-color: $colorBtn;
+        font-size: $fontSizeBtn;
+        font-weight: $fontWeightBtn;
+        color: $colorTextBtn;
+        text-transform: uppercase;
+        border-radius: 1rem;
+        border: none;
+        transition: all 0.3s ease;
+        &:hover {
+            cursor: pointer;
+            background-color: $colorHoverBtn;
+        }
+    }
+}

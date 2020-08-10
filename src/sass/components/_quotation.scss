@@ -1,0 +1,46 @@
+.quotation-message{
+    padding: 1rem;
+    text-align: center;
+    background-color:$colorSecondary;
+    margin-top: 2rem;
+    color: $colorMsg;
+}
+.quotation-container{
+    padding: .5rem;
+    text-align: center;
+    background-color:$colorPrimary;
+    margin-top: 1rem;
+    position:relative;
+}
+.quotation-amount{
+    padding: 1rem 0;
+    margin: 0;
+    color:white;
+    font-weight:bold;
+    text-transform:uppercase;
+    & span{
+        padding-left: 1rem;
+    }
+}
+span.resultado {
+    position: relative;
+    width: 100%;
+}
+.resultado-enter {
+    transition: .5s;
+}
+.resultado-enter.resultado-enter-active{
+    transform: translateY(0%);
+}
+.resultado-exit{
+    transform: translateY(0);
+    transition: .5s;
+    position : absolute;
+    left: 0;
+    bottom : 0;
+    right: 0;
+}
+.resultado-exit-active{
+    opacity: 0;
+    transform: translateY(-10%);
+}

@@ -5,20 +5,6 @@ import Quotation from './components/Quotation'
 import Summary from './components/Summary'
 import Spinner from './components/Spinner'
 
-import styled from '@emotion/styled' //npm i @emotion/styled @emotion/core es una libreria para escribir estilos en React
-
-// defino estilos para el elemento HTMl div
-const Container = styled.div`
-  max-width:600px;
-  margin:0 auto;
-`
-
-// defino estilos para el elemento HTMl div
-const ContainerForm = styled.div`
-  background-color:#ffffff;
-  padding: 3rem;
-`
-
 function App() {
 
   const [summary, setSummary] = useState({
@@ -32,18 +18,17 @@ function App() {
   
   const [loading, setLoading] = useState(false)
 
-
   // Destructuring
   const {quotation, quotationDetails } = summary
 
   return (
     <Fragment>
-      <Container>
+      <div className='max-container'>
         <Header 
           title='Cotizador de Seguros'
         />
 
-        <ContainerForm>
+        <div className='form-container'>
           <Form 
             setSummary={setSummary}
             setLoading={setLoading}
@@ -61,11 +46,9 @@ function App() {
             quotation={quotation}
             />  
             : null  
-          }
-           
-                    
-        </ContainerForm>
-      </Container>
+          }        
+        </div>
+      </div>
     </Fragment>
   );
 }

@@ -1,0 +1,11 @@
+.summary-container{
+    padding: 1rem;
+    text-align: center;
+    color:$colorBody;
+    margin-top: 1rem;
+    font-weight: 600;
+    & span{
+        color:$colorPrimary;
+        font-weight: 600;
+    }
+}

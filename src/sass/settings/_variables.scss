@@ -1,0 +1,50 @@
+// COLORS
+  $colorPrimary: color("light-blue","darken-4");  
+  $colorSecondary: color("light-blue","accent-3"); 
+
+  $colorBackground: white;
+  $colorBackgroundLinear: linear-gradient(to right, #904e95, #e96443);
+  $colorBackgroundLinearWebKit: -webkit-linear-gradient(to right, #904e95, #e96443); 
+
+  $errorBg: color("red" ,"accent-4");
+
+  $colorH1: $colorPrimary;
+  $colorH2: $colorPrimary;
+  $colorH3: $colorPrimary;
+  $colorH4: $colorPrimary;
+  $colorH5: $colorPrimary;
+  $colorH6: $colorPrimary;
+
+  $colorBody:color( "grey", "darken-4");
+
+  $colorBtn: $colorPrimary;
+  $colorTextBtn: white;
+  $colorHoverBtn:color("light-blue","accent-3"); 
+
+  $colorMsg:white;
+
+  $colorGrey: color("grey" ,"lighten-3");
+
+  
+  // FONTSIZE
+  $h1FontSize: 4.5rem;
+  $h2FontSize: 3.5rem;
+  $h3FontSize: 2.8rem;
+  $h4FontSize: 2.3rem;
+  $h5FontSize: 2rem;
+  $h6FontSize: 1.8rem;
+
+  $bodyFontSize: 1.8rem;
+  $bodyFontSize-sm: 1.8rem;
+
+  $navFontSize: 1.8rem;
+
+  $fontSizeBtn: 1.6rem;
+
+  //FONTFAMILY
+  $headingFontFamily:'Roboto', sans-serif;
+  $bodyFontFamily:'Lato', sans-serif;
+  
+  //FONTWEIGHT
+  $fontWeightBtn:600;
+  $fontWeightHeadings:600;

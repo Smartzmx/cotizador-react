@@ -1,0 +1,92 @@
+
+body {
+    background: $colorBackground;  /* fallback for old browsers */
+    // background: $colorBackgroundLinearWebKit; /* Chrome 10-25, Safari 5.1-6 */
+    // background: $colorBackgroundLinear;
+    box-sizing: border-box;
+    font-family: $bodyFontFamily;
+    font-weight: 400;
+    font-size: $bodyFontSize;
+    line-height: 1.7;
+    color: $colorBody;
+}
+
+.containerFluid{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 !important;
+    position: fixed;
+    z-index: 99;
+}
+
+.sectionPaddingBottom {
+
+    @include respond(sm-phone) {
+        padding-bottom: 2rem;
+    }
+    @include respond(phone) {
+        padding-bottom: 3rem;
+    }
+    @include respond(tab-port) {
+        padding-bottom: 4rem;
+    }
+    @include respond(tab-land) {
+        padding-bottom: 5rem;
+    }
+    @include respond(laptop) {
+        padding-bottom: 6rem;
+    }
+    @include respond(big-desktop) {
+        padding-bottom: 10rem;
+    }
+}
+.sectionPaddingTop {
+
+    @include respond(sm-phone) {
+        padding-top: 2rem;
+    }
+    @include respond(phone) {
+        padding-top: 3rem;
+    }
+    @include respond(tab-port) {
+        padding-top: 4rem;
+    }
+    @include respond(tab-land) {
+        padding-top: 5rem;
+    }
+    @include respond(laptop) {
+        padding-top: 6rem;
+    }
+    @include respond(big-desktop) {
+        padding-top: 10rem;
+    }
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $headingFontFamily;
+}
+
+h1{
+    font-size: $h1FontSize;
+    color: $colorH1;
+}
+h2{
+    font-size: $h2FontSize;
+    color: $colorH2;
+}
+h3{
+    font-size: $h3FontSize;
+    color: $colorH3;
+}
+h4{
+    font-size: $h4FontSize;
+    color: $colorH4;
+}
+h5{
+    font-size: $h5FontSize;
+    color: $colorH5;
+}
+h6{
+    font-size: $h6FontSize;
+    color: $colorH6;
+}
