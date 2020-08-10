@@ -11,7 +11,7 @@ const Summary = ({quotationDetails}) => {
 
     <Fragment>
         <div className='summary-container'>
-            <h2>Resumen de Cotización</h2>
+            <h3>Resumen de Cotización</h3>
             <ul>
                 <li>Marca: <span>{firstLetterUpperCase(brand)}</span> </li>
                 <li>Año: <span>{year}</span></li>

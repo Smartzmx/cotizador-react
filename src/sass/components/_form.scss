@@ -25,6 +25,12 @@
     font-size: $bodyFontSize;
     color: $colorBody;
 }
+.select-wrapper input.select-dropdown{
+    color: $colorSecondary;
+    text-align: center;
+    font-weight: 600;
+}
+
 .input-field{
     width: 100%;
     margin: 2.5rem 0;
@@ -100,6 +106,10 @@
         &:hover {
             cursor: pointer;
             background-color: $colorHoverBtn;
+        }
+        &:visited,
+        &:focus{
+            background-color: $colorBtn;
         }
     }
 }

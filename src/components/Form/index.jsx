@@ -34,7 +34,13 @@ const Form = ({setSummary, setLoading}) => {
 
     // Validated the info  
     if(brand.trim() === '' || year.trim() === '' || coverage.trim() === ''){
-        setError(true)
+     
+      setError(true)
+
+      setTimeout(() => {
+       setError(false)
+      }, 3000);
+      
         return
     } else {
         setError(false)
@@ -102,7 +108,7 @@ const Form = ({setSummary, setLoading}) => {
           handleChange={handleChange}
         />
         <div className='btn-container'>
-          <button class="btn waves-effect waves-light" type="submit" name="action">Cotizar
+          <button class="btn waves-effect waves-light button" type="submit" name="action">Cotizar
             <i class="material-icons right">send</i>
           </button>
         </div>
